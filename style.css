@@ -55,11 +55,12 @@ img{
     color:#ffffff;
     text-align:right;
     text-decoration:none;
-    left:calc(-100% + 60px);
+    left:calc(-110% + 64px);
     transition:all 0.5s ease-in-out;
     -moz-transition:all 0.5s ease-in-out;
     -webkittransition:all 0.5s ease-in-out;
 }
+
 .social a:after {
     display: inline-block;
     font-family: "Ionicons";
