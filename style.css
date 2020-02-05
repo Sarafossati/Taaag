@@ -620,8 +620,10 @@ ul a{
     
 }
 .cerchioarticolo{
+    background-color: rgba(0,0,0,0.5) ;
     width: 200px;
     height: auto;
+    border-radius: 50%;
 }
 .bannersingle{
     width: 100%;
