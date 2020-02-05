@@ -580,13 +580,14 @@ ul a{
     color: #000000;
     text-decoration-color: #000000;
 }
-/* PAGINA SINGLE */
-.sfondo{
-    background-color: #f5ece0;
+footer{
+    background-color: #ffffff;
 }
+/* PAGINA SINGLE */
+
 .titoloarticolo{
     display: block;
-    margin-top: 50px;
+    padding-top: 50px;
     margin-bottom: 10px;
     text-align: center;
     font-size: 36px;
@@ -606,19 +607,25 @@ ul a{
     text-align: right;
     display: block;
     margin-right: 50px;
+    padding-bottom: 50px;
+}
+.testoarticolo{
+    text-align: center;
+    padding: 40px 0;
+
 }
 .fotoarticolo{
-    width: 300px;
-    height: auto;
+    margin: auto;
+    display: block;
 }
-.gridarticolo{
+/* .gridarticolo{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 5fr 5fr;
     margin: 50px auto;
     width: 70%;
     
-}
+} */
 .cerchioarticolo{
     background-color: rgba(0,0,0,0.5) ;
     width: 200px;
@@ -632,10 +639,14 @@ ul a{
     justify-content: center;
     align-items: center;
 }
-.immagineduomo{
-    height: 500px;
-    width: auto;
+.articolosingolo{
+    width: 80%;
+    background-color: white;
+    margin: 50px auto;
+    display: block;
+    padding: 50px;
 }
+
 /* PAGINA CONTATTACI */
 
 .banner2{
@@ -826,7 +837,8 @@ svg {
      /* The image used */
     background-image: url("img/Muro-bianco.jpg");
     /* Set a specific height */
-    height: 2100px;
+    height: auto;
+    padding-bottom: 50px;
       
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -847,240 +859,3 @@ svg {
 	background: currentColor;
 }
 
-/* ERROR 1 */
-.main{
-    margin-top: 15%;
-}
-  
-.st0{fill:#fff}
-.st2{fill:#5d89af}
-.st3{fill:#709abf}
-.st4,.st6{
-    fill:#fff;
-    stroke:#b3dcdf;
-    stroke-miterlimit:10
-}
-.st6{
-    stroke:#5d89af;
-    stroke-width:2
-}
-.st7,.st8,.st9{
-    stroke:#709abf;
-    stroke-miterlimit:10
-}
-  
-.st7{
-    stroke-width:5;
-    stroke-linecap:round;
-    fill:none
-}
-.st8,.st9{
-    fill:#fff
-}
-.st9{
-    fill:none
-}
-
-  
-#cloud1{
-    animation: cloud003 15s linear infinite;
-}
-  
-#cloud2{
-    animation: cloud002 25s linear infinite;
-}
-  
-#cloud3{
-    animation: cloud003 20s linear infinite;
-}
-  
-#cloud4{
-    animation: float 4s linear infinite;
-}
-  
-#cloud5{
-    animation: float 8s linear infinite;
-}
-  
-#cloud7{
-    animation: float 5s linear infinite;
-}
-  
-#tracks{
-    animation: slide 650ms linear infinite;
-}
-  
-#bumps{
-    animation: land 10000ms linear infinite;
-}
-  
-  @keyframes jig {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(1px); }
-      100% { transform: translateY(0px); }
-}
-  
-#car-layers{
-    animation: jig 0.35s linear infinite;
-}
-  
-@keyframes land {
-      from { transform: translateX(0); }
-      to { transform: translateX(1000px); }
-}
-  
-  
-@keyframes slide {
-      from { transform: translateX(0px); }
-      to { transform: translateX(100px); }
-}
-  
-/* @keyframes cloudFloat {
-    0% { transform: translateX(0) translateY(3px); }
-    100% { transform: translateX(1000px) translateY(0); }
-} */
-  
-@keyframes cloud001 {
-    0% { transform: translateX(-1000px) translateY(3px); }
-    100% { transform: translateX(1000px) translateY(0); }
-}
-  
-  @keyframes cloud002 {
-    0% { transform: translateX(-1000px) translateY(3px); }
-    100% { transform: translateX(1000px) translateY(0); }
-  }
-  
-@keyframes cloud003 {
-    0% { transform: translateX(-1000px) translateY(3px); }
-    100% { transform: translateX(1000px) translateY(0); }
-}
-  
-@keyframes float {
-      0% { transform: translateY(0px) translateX(0); }
-      50% { transform: translateY(8px) translateX(5px); }
-      100% { transform: translateY(0px) translateX(0); }
-}
-  
-#bracefront, #braceback{
-    animation: braces 1s linear infinite;
-}
-  
-@keyframes braces {
-      0% { transform: translateX(-2px); }
-    25% { transform: translateX(3px); }
-      50% { transform: translateX(-2px); }
-      75% { transform: translateX(3px); }
-    100% { transform: translateX(-2px); }
-}
-/* I. Containers */
-figure {
-	font-size: 6px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 64em;
-}
-figcaption {
-	color: #fff;
-	display: flex;
-	align-content: space-between;
-	flex-wrap: wrap;
-	height: 17em;
-}
-figcaption span:before, .sad-mac:before {
-	content: "";
-	display: block;
-	width: 1em;
-	height: 1em;
-	transform: translate(-1em,-1em);
-} 
-figcaption span {
-	display: inline-block;
-	margin: 0 2em;
-	width: 4em;
-	height: 6em;
-}
-.sr-text {
-	overflow: hidden;
-	position: absolute;
-	width: 0;
-	height: 0;
-}
-/* II. Sprites */
-/* 1. Sad Mac */
-.sad-mac {
-	background: #fff;
-	margin: 0 auto 7em auto;
-	width: 23em;
-	height: 30em;
-}
-.sad-mac:before {
-	box-shadow: 1em 1em, 23em 1em, 4em 3em, 5em 3em, 6em 3em, 7em 3em, 8em 3em, 9em 3em, 10em 3em, 11em 3em, 12em 3em, 13em 3em, 14em 3em, 15em 3em, 16em 3em, 17em 3em, 18em 3em, 19em 3em, 20em 3em, 3em 4em, 21em 4em, 3em 5em, 21em 5em, 3em 6em, 7em 6em, 9em 6em, 15em 6em, 17em 6em, 21em 6em, 3em 7em, 8em 7em, 16em 7em, 21em 7em, 3em 8em, 7em 8em, 9em 8em, 15em 8em, 17em 8em, 21em 8em, 3em 9em, 21em 9em, 3em 10em, 10em 10em, 13em 10em, 21em 10em, 3em 11em, 11em 11em, 12em 11em, 21em 11em, 3em 12em, 21em 12em, 3em 13em, 10em 13em, 11em 13em, 12em 13em, 13em 13em, 14em 13em, 21em 13em, 3em 14em, 9em 14em, 15em 14em, 16em 14em, 21em 14em, 3em 15em, 17em 15em, 21em 15em, 3em 16em, 21em 16em, 4em 17em, 5em 17em, 6em 17em, 7em 17em, 8em 17em, 9em 17em, 10em 17em, 11em 17em, 12em 17em, 13em 17em, 14em 17em, 15em 17em, 16em 17em, 17em 17em, 18em 17em, 19em 17em, 20em 17em, 3em 22em, 4em 22em, 5em 22em, 14em 22em, 15em 22em, 16em 22em, 17em 22em, 18em 22em, 19em 22em, 20em 22em, 1em 27em, 2em 27em, 3em 27em, 4em 27em, 5em 27em, 6em 27em, 7em 27em, 8em 27em, 9em 27em, 10em 27em, 11em 27em, 12em 27em, 13em 27em, 14em 27em, 15em 27em, 16em 27em, 17em 27em, 18em 27em, 19em 27em, 20em 27em, 21em 27em, 22em 27em, 23em 27em, 1em 28em, 23em 28em, 1em 29em, 23em 29em, 1em 30em, 23em 30em;
-}
-/* 2. Letters */
-._0:before {
-	box-shadow: 2em 1em, 3em 1em, 1em 2em, 1em 3em, 1em 4em, 1em 5em, 4em 2em, 4em 3em, 4em 4em, 4em 5em, 2em 4em, 3em 3em, 2em 6em, 3em 6em;
-}
-._4:before {
-	box-shadow: 1em 1em, 1em 2em, 1em 3em, 1em 4em, 4em 1em, 4em 2em, 4em 3em, 4em 4em, 2em 4em, 3em 4em, 4em 5em, 4em 6em;
-}
-.d:before {
-	box-shadow: 1em 1em, 2em 1em, 3em 1em, 1em 2em, 4em 2em, 1em 3em, 4em 3em, 1em 4em, 4em 4em, 1em 5em, 4em 5em, 1em 6em, 2em 6em, 3em 6em;
-}
-.e:before {
-	box-shadow: 1em 1em, 2em 1em, 3em 1em, 4em 1em, 1em 2em, 1em 3em, 2em 3em, 3em 3em, 1em 4em, 1em 5em, 1em 6em, 2em 6em, 3em 6em, 4em 6em;
-}
-.f:before {
-	box-shadow: 1em 1em, 2em 1em, 3em 1em, 4em 1em, 1em 2em, 1em 3em, 2em 3em, 3em 3em, 1em 4em, 1em 5em, 1em 6em;
-}
-.n:before {
-	box-shadow: 1em 1em, 1em 2em, 1em 3em, 1em 4em, 1em 5em, 1em 6em, 4em 1em, 4em 2em, 4em 3em, 4em 4em, 4em 5em, 4em 6em, 2em 3em, 3em 4em;
-}
-.o:before {
-	box-shadow: 2em 1em, 3em 1em, 1em 2em, 1em 3em, 1em 4em, 1em 5em, 4em 2em, 4em 3em, 4em 4em, 4em 5em, 2em 6em, 3em 6em;
-}
-.r:before {
-	box-shadow: 1em 1em, 2em 1em, 3em 1em, 4em 2em, 1em 2em, 1em 3em, 1em 4em, 2em 3em, 3em 3em, 1em 5em, 1em 6em, 4em 4em, 4em 5em, 4em 6em;
-}
-.t:before {
-	box-shadow: 1em 1em, 2em 1em, 3em 1em, 2em 2em, 2em 3em, 2em 4em, 2em 5em, 2em 6em;
-}
-.u:before {
-	box-shadow: 1em 1em, 1em 2em, 1em 3em, 1em 4em, 1em 5em, 4em 1em, 4em 2em, 4em 3em, 4em 4em, 4em 5em, 2em 6em, 3em 6em;
-}
-/* III. Responsiveness */
-/* This cannot be smoothly done using viewport units; sprite pixels will look divided when font size is a floating point. */
-@media screen and (min-width: 720px) {
-	figure {
-	    font-size: 7px;
-	}
-}
-@media screen and (min-width: 1440px) {
-	figure {
-	    font-size: 8px;
-	}
-}
-     
-  
-@keyframes float {
-    100% {
-    transform: translateY(20px);
-}
-}
-@media (max-width: 450px) {
-svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -250px;
-    margin-left: -190px;
-}
-.message-box {
-    top: 50%;
-    left: 50%;
-    margin-top: -100px;
-    margin-left: -190px;
-    text-align: center;
-}
-}
