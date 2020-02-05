@@ -434,7 +434,7 @@ a, a:visited, a:hover, a:active {
     from {opacity: 0;}
     to {opacity:1 ;}
 }
-  
+
 /* inizio GRID */
 .wrapper{
     display: grid;
