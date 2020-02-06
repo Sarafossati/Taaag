@@ -754,7 +754,6 @@ div.menusocial a span{
      
    /* Create the parallax scrolling effect */
    background-attachment: fixed;
-   -webkit-overflow-scrolling: touch;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -788,7 +787,6 @@ div.menusocial a span{
       
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    -webkit-overflow-scrolling: touch;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1019,10 +1017,4 @@ html {
     .desi, .sara{
         width: 50%;
     }
-    .parallax, .parallax1 {
-        /* The image used */
-       background-image: url("img/Muro-bianco.jpg");
-       /* Set a specific height */
-       height: auto;
-       background-attachment: none;
 }
