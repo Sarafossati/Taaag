@@ -754,6 +754,7 @@ div.menusocial a span{
      
    /* Create the parallax scrolling effect */
    background-attachment: fixed;
+   -webkit-overflow-scrolling: touch;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -787,6 +788,7 @@ div.menusocial a span{
       
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
+    -webkit-overflow-scrolling: touch;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
