@@ -5,7 +5,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, i, ol, ul, li, form, label,
     /* box-sizing: border-box; */
 	font-size: 100%;
     font: inherit;
-    font-family: 'Roboto mono', monospace;
+    font-family: 'Nova Mono','Roboto mono', monospace;
 }
 .active{
     color: #00acee;
@@ -571,7 +571,8 @@ footer p{
     justify-content: center;
 }
 footer p.margintop{
-    margin-top: 40px;
+    margin: 40px;
+    text-align: center;
 }
 footer p.marginbottom{
     margin-bottom: 40px;
@@ -749,9 +750,7 @@ div.menusocial a span{
     /* The image used */
    background-image: url("img/Muro-bianco.jpg");
    /* Set a specific height */
-   height: 700px;
-   display: flex;
-   justify-content: space-between;
+ 
      
    /* Create the parallax scrolling effect */
    background-attachment: fixed;
@@ -766,73 +765,19 @@ div.menusocial a span{
     align-self: flex-end;
 }
 .descrizionenoi{
-    margin-top: 150px;
+    padding: 100px;
+    padding-bottom: 20px;
     text-align: center;
 }
+.contenitore{
+    display: flex;
+   justify-content: center;
+}
 
-/* LOADER */
 .caricaaltri{
     background-color: #2F3242;
 }
-svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -250px;
-    margin-left: -400px;
-}
-.message-box {
-    height: 200px;
-    width: 380px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -100px;
-    margin-left: 50px;
-    color: #FFF;
-    font-family: Roboto;
-    font-weight: 300;
-}
-.message-box h1 {
-    font-size: 60px;
-    line-height: 46px;
-    margin-bottom: 40px;
-}
-.buttons-con .action-link-wrap {
-    margin-top: 40px;
-}
-.buttons-con .action-link-wrap a {
-    background: #68c950;
-    padding: 8px 25px;
-    border-radius: 4px;
-    color: #FFF;
-    font-weight: bold;
-    font-size: 14px;
-    transition: all 0.3s linear;
-    cursor: pointer;
-    text-decoration: none;
-    margin-right: 10px
-}
-.buttons-con .action-link-wrap a:hover {
-    background: #5A5C6C;
-    color: #fff;
-}
-  
-#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
-    animation: float 1s infinite ease-in-out alternate;
-}
-#Polygon-2 {
-    animation-delay: .2s; 
-}
-#Polygon-3 {
-    animation-delay: .4s; 
-}
-#Polygon-4 {
-    animation-delay: .6s; 
-}
-#Polygon-5 {
-    animation-delay: .8s; 
-}
+
 .parallax {
      /* The image used */
     background-image: url("img/Muro-bianco.jpg");
@@ -974,4 +919,102 @@ html {
 
 .errorcode {
   color: white;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 701px) and (max-width: 801px) {
+    .cerchio, .cerchiop{
+        width: 500px;
+        height: auto;
+    }
+   .altriipad{
+       margin: 10px auto;
+   }
+   .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: none;
+    }
+    input.footer_text{
+        width: 50%;
+    }
+    .immagine{
+        width: 80%;
+    }
+    .mapparesponsive{
+        width: auto;
+    }
+}
+@media screen and (max-width: 700px) {
+    .cerchio, .cerchiop{
+        width: 230px;
+        height: auto;
+    }
+    .verticale, .nomepagina, .nomepaginap{
+        display: none;
+    }
+    .cit{
+        padding: 30px;
+    }
+    .container{
+        display: none;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: none;
+        }
+    input.footer_text{
+        width: 50%;
+    }
+    .caratterepiccolo{
+        font-size: 10px;
+    }
+    form{
+        font-size: 10px;
+    }
+    footer p.margintop{
+        font-size: 10px;
+    }
+    .cit3{
+        padding: 30px;
+        font-size: 14px;
+    }
+    .black{
+        padding: 0px;
+    }
+    .mapparesponsive{
+        width: 100%;
+        height: auto;
+    }
+    .scritta{
+        text-align: center;
+        font-size: 14px;
+        padding: 20px;
+    }
+    .immagine{
+        width: 80%;
+    }
+    .articolosingolo{
+        width: 90%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .destra{
+        margin: 0px;
+    }
+    .titolo-main, .titoloarticolo{
+        font-size: 20px;
+    }
+    .scritta1{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .descrizionenoi{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .desi, .sara{
+        width: 50%;
+    }
 }
