@@ -82,6 +82,16 @@
           </div>
     </header>
     <main class="parallax">
+      <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+        if (Modernizr.touch){
+        $('#slide1, #slide3, #slide5').css('background-attachment', 'scroll');
+        $('#slide1, #slide3, #slide5').removeAttr('data-stellar-background-ratio');
+        } else {
+        $(window).stellar();
+        }
+        });
+        </script>
       <div class="cit">
         <b>Diffondiamo la bellezza dell'arte di strada a Milano</b>
         <br>
