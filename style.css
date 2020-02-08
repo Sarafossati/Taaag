@@ -695,6 +695,12 @@ footer{
     display: block;
     padding: 50px;
 }
+/* PAGINA ARTICOLI */
+.wrapperarticoli{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: none;
+}
 
 /* PAGINA CONTATTACI */
 
@@ -968,6 +974,16 @@ html {
 .errorcode {
   color: white;
 }
+.banner4{
+    width: 100%;
+    height: 70vh;
+    background: url(img/banner4.jpg) no-repeat center center;
+    background-size: cover;
+    filter: brightness(0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* MEDIA QUERY */
 @media screen and (min-width: 701px) and (max-width: 801px) {
@@ -977,11 +993,11 @@ html {
     }
    .altriipad{
        margin: 10px auto;
-   }
+    }
    .wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: none;
     }
     input.footer_text{
         width: 50%;
@@ -991,6 +1007,16 @@ html {
     }
     .mapparesponsive{
         width: auto;
+    }
+    .wrapperarticoli{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: none;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: none;
     }
     
 }
@@ -1012,7 +1038,15 @@ html {
         display: grid;
         grid-template-columns: 1fr;
         column-gap: none;
-        }
+    }
+    .wrapperarticoli{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: none;
+    }
+    .vuota{
+        display: none;
+    }
     input.footer_text{
         width: 50%;
     }
