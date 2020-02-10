@@ -844,6 +844,7 @@ div.menusocial a span{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 
@@ -1099,5 +1100,10 @@ html {
     }
     .desi, .sara{
         width: 50%;
+    }
+}
+@media only screen and (max-device-width: 1366px) {
+    .parallax, .parallax1{
+        background-attachment: scroll;
     }
 }
